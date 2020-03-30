@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup
+- move a copy of .env.example to /.env and paste inside your API-key.
+- run npm i && npm start to start the development server
+
+(the file /.env is ignored)
+
 ## Available Scripts
 
 In the project directory, you can run:
