@@ -4,6 +4,7 @@ import youtube from "./api/youtube";
 import {SearchBar, VideoDetail, VideoList}  from './components/';
 
 class App extends React.Component {
+    API_KEY = process.env.REACT_APP_API_KEY;
     state = {
         videos: [],
         selectedVideo: null,
@@ -18,7 +19,7 @@ class App extends React.Component {
             params: {
                 part: 'snippet',
                 maxResults: 5,
-                key: process.env.REACT_APP_API_KEY,
+                key: this.API_KEY,
                 q: SearchTerm
             }
         });
